@@ -1,7 +1,7 @@
 from django.urls import path
 
-from aplicacion.control.views import control1
+from aplicacion.control.views import controlCL
 
 urlpatterns = [
-    path('home/info1/control1/', control1, name='vista5'),
+    path('home/infoCL/controlCL/', controlCL, name='vista5'),
 ]
