@@ -9,3 +9,9 @@ def principal(request):
 
 def infoCL(request):
     return render(request, 'aplicacion/homepage/plantillas/PreLabs/infoCL.html')
+
+def infoPI(request):
+    return render(request, 'aplicacion/homepage/plantillas/PreLabs/infoPI.html')
+
+def infoMR(request):
+    return render(request, 'aplicacion/homepage/plantillas/PreLabs/infoMR.html')
