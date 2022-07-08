@@ -15,3 +15,6 @@ def infoPI(request):
 
 def infoMR(request):
     return render(request, 'aplicacion/homepage/plantillas/PreLabs/infoMR.html')
+
+def camera(request):
+    return render(request, 'aplicacion/homepage/plantillas/PreLabs/camera.html')

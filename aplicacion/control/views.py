@@ -10,3 +10,6 @@ def controlPI(request):
 
 def controlMR(request):
     return render(request, 'aplicacion/control/plantillas/control/controlMR.html') 
+
+def camera(request):
+    return render(request, 'aplicacion/control/plantillas/control/camera.html')
