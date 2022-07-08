@@ -60,6 +60,7 @@
                                  <!--hasta acá-->  
                                
                                  <div class="card-body" >
+                                    
                                     <body>
                                         <div class="div_centrado fondo_deg">
                                             <div id="cont_webcam" class="div_centrado">
@@ -85,9 +86,27 @@
                                             audio:false,
                                             video:{
                                                 width:1100, height:480
+                                                function handleSuccess(stream){
+                                                    window.stream=stream;
+                                                    video.srcObject=stream;
+                                                }
+                                                init()
+                                                var contex=canvas.getContext('2d');
                 
                                             }
+                                            function handleSuccess(stream){
+                                                window.stream=stream;
+                                                video.srcObject=stream;
+                                            }
+                                            init()
+                                            var contex=canvas.getContext('2d');
                                         };
+                                        function handleSuccess(stream){
+                                            window.stream=stream;
+                                            video.srcObject=stream;
+                                        }
+                                        init()
+                                        var contex=canvas.getContext('2d');
                                         async function init(){
                                             try{
                                               const stream=await
@@ -104,6 +123,7 @@
                                         init()
                                         var contex=canvas.getContext('2d');
                                     </script>
+                                    
                                     p2
                                  <!--a-->
 
