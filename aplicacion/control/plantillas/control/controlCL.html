@@ -50,11 +50,60 @@
                                     <h3 class="card-title">Camara</h3>
                                     
                                 </div>
-                             <!--de aqui-->  
-                        
-                            
-                                <li class="circule-right"><a href="/page2/home/camera/camera">ON/OFFfff </a></li>
-                           
+
+                           <!--de aqui-->  
+                           <ol class="breadcrumb float-sm-right">
+                            <li class="circule-right"><a href="/page2/home/camera/camera">ON/OFFf </a></li>
+                        </ol>
+                    <body>
+                        <div class="div_centrado fondo_deg">
+                            <div id="cont_webcam" class="div_centrado">
+                                <div class="borde">
+                                    <video id="video" playsinline autoplay></video>
+                                </div>
+                                <canvas id="canvas" width="300px" height="200px"></canvas>
+                            </div>
+                        <div id="mensaje" class="">
+                          </div>
+                        </div>
+                    </body>
+
+                    <link rel="stylesheet" href="ejemplo.css"
+                    <script src"jquery-2.1.3.js"></script>
+                    <script>
+                        'use strict';
+                        document.getElementById('canvas').style.display='none';
+                        const video=document.getElementById('video');
+                        const canvas=document.getElementById('canvas');
+
+                        const constrains={
+                            audio:false,
+                            video:{
+                                width:1100, height:480
+
+                            }
+                        };
+                        async function init(){
+                            try{
+                              const stream=await
+                              navigator.mediaDevices.getUserMedia(constraints);
+                              handleSuccess(stream);
+                            } catch(e){
+                                $("#mensaje").html("seleccione disp");
+                            }
+                        }
+                        function handleSuccess(stream){
+                            window.stream=stream;
+                            video.srcObject=stream;
+                        }
+                        init()
+                        var contex=canvas.getContext('2d');
+                    </script>
+
+
+
+                              
+                             <!--hasta acá-->  
 
                                 <!--hasta acá-->  
                                 
