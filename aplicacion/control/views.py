@@ -5,11 +5,10 @@ from django.shortcuts import render
 def controlCL(request):
     return render(request, 'aplicacion/control/plantillas/control/controlCL.html')
 
+
 def controlPI(request):
-    return render(request, 'aplicacion/control/plantillas/control/controlPI.html') 
+    return render(request, 'aplicacion/control/plantillas/control/controlPI.html')
+
 
 def controlMR(request):
-    return render(request, 'aplicacion/control/plantillas/control/controlMR.html') 
-
-def camera(request):
-    return render(request, 'aplicacion/control/plantillas/control/camera.html')
+    return render(request, 'aplicacion/control/plantillas/control/controlMR.html')
