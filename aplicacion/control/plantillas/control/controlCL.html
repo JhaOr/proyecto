@@ -39,7 +39,9 @@
                                     <h3 class="card-title">Control</h3>
                                 </div>
                                 <div class="card-body" >
-
+                                    {% block botones %}
+                                    {% include 'aplicacion/control/plantillas/botones/botonesCL.html' %}
+                                    {% endblock %}
                                 </div>
                             </div>
                         </div>
@@ -50,6 +52,9 @@
                                     <h3 class="card-title">Camara</h3> 
                                 </div>
                                 <div class="card-body" >
+                                    {% block camara %}
+                                    {% include 'aplicacion/control/plantillas/camara/camara.html' %}
+                                    {% endblock %}
                                 </div>
                             </div>
                         </div>
@@ -60,7 +65,9 @@
                                     <h3 class="card-title">Tabla de Datos</h3>
                                 </div>
                                 <div class="card-body" >
-
+                                    {% block tablas %}
+                                    {% include 'aplicacion/control/plantillas/tablas/tablas.CL.html' %}
+                                    {% endblock %}
                                 </div>
                             </div>
                         </div>
@@ -71,7 +78,9 @@
                                     <h3 class="card-title">Grafica y vs t</h3>
                                 </div>
                                 <div class="card-body" >
-
+                                    {% block grafica %}
+                                    {% include 'aplicacion/control/plantillas/graficas/graficasCL.html' %}
+                                    {% endblock %}
                                 </div>
                             </div>
                         </div>
