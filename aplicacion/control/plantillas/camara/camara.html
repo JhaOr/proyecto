@@ -2,49 +2,22 @@
 {% block camara %}
 
 
-    <div class="div_centrado fondo_deg">
-        <div id="cont_webcam" class="div_centrado">
-            <div class="borde">
-                <video id="video" playsinline autoplay></video>
-            </div>
-            <canvas id="canvas" width="100px" height="10px"></canvas>
-        </div>
-    <div id="mensaje" class="">
-      </div>
-    </div>
-<script>
-    'use strict';
-    document.getElementById('canvas').style.display='none';
-    const video=document.getElementById('video');
-    const canvas=document.getElementById('canvas');
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <title>accediendo a la camara</title>
+    </head>
+    <body>
 
-    const constrains={
-        audio:false,
-        video:{
-            width:1100, height:480
+<h1>accediendo al hardware</h1>
 
-        }
-    };
-    async function init(){
-        try{
-          const stream=await
-          navigator.mediaDevices.getUserMedia(constraints);
-          handleSuccess(stream);
-        } catch(e){
-            $("#mensaje").html("seleccione dispo");
-        }
-    }
-    function handleSuccess(stream){
-        window.stream=stream;
-        video.srcObject=stream;
-    }
-    init()
-    var contex=canvas.getContext('2d');
-</script>
+<video src="" id="video" autoplay="true"></video>
 
 
-
-
+<script src="main.js"></script>
+</body></html>
 
 
     
