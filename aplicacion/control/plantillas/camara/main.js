@@ -5,4 +5,6 @@ navigator.mediaDevices.getUserMedia({ audio: false, video: true }).then((stream)
 
     video.srcObject = stream
 
+
+
 }).catch((error) => { console.log(error) })
